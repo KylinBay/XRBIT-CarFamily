@@ -628,20 +628,19 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
 
+    enum enServo{
+        servo1 = 0x19,
+        servo2 = 0x1A,
+        servo3 = 0x1B
+    }
+
     //% blockId=XRBIT_SetServoAngle block="SetServoAngle|Num %Num|Angle %Angle"
     //% weight=94
     //% blockGap=10
     //% color="#0fbc11"
-    //% Num.min=1 Num.max=3 Angle.min=0 Angle.max=180
+    //% Angle.min=0 Angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
-    export function SetServoAngle(Num: number, Angle: number): void {
-        var servo = 0
-        if (Num == 1)
-            servo = 0x19
-        if (Num == 2)
-            servo = 0x1A
-        if (Num == 3)
-            servo = 0x1B
+    export function SetServoAngle(servo: enServo, Angle: number): void {
         let buf1 = pins.createBuffer(2);
         let buf2 = pins.createBuffer(2);
         buf1[0] = 0xFF;
