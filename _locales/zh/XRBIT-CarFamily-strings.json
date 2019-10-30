@@ -49,6 +49,9 @@
   "XRbit_小车.enMecanum.southWest|block": "左后 ↙",
   "XRbit_小车.enMecanum.southEast|block": "右后 ↘",
 
+  "XRbit_小车.enServo.servo1|block": "舵机1",
+  "XRbit_小车.enServo.servo2|block": "舵机2",
+  "XRbit_小车.enServo.servo3|block": "舵机3",
 
   "XRbit_小车.SetMotor|block": "设置电机|%Motor|速度为 %Speed",
   "XRbit_小车.SetMecanumWheel|block": "设置全向轮|方向 %Mecanum|速度为 %Speed",

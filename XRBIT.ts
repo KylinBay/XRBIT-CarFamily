@@ -628,10 +628,13 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
 
-    enum enServo{
+    export enum enServo{
+        //% blockId="servo1" block="servo1"
         servo1 = 0x19,
+        //% blockId="servo2" block="servo2"
         servo2 = 0x1A,
-        servo3 = 0x1B
+        //% blockId="servo3" block="servo3"
+        servo3 = 0x1B,
     }
 
     //% blockId=XRBIT_SetServoAngle block="SetServoAngle| %servo|Angle %Angle"
