@@ -53,7 +53,7 @@
   "XRbit_小车.SetMotor|block": "设置电机|%Motor|速度为 %Speed",
   "XRbit_小车.SetMecanumWheel|block": "设置全向轮|方向 %Mecanum|速度为 %Speed",
   "XRbit_小车.SetMecanumStop|block": "停止全向轮运动",
-  "XRbit_小车.SetServoAngle|block": "设置舵机|编号 %Num|角度 %Angle",
+  "XRbit_小车.SetServoAngle|block": "设置舵机|编号 %servo|角度 %Angle",
   "XRbit_小车.SaveServoAngle|block": "保存当前角度为默认值",
   "XRbit_小车.ReSetServoAngle|block": "恢复所有角度为默认值"
 }
