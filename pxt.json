@@ -1,0 +1,21 @@
+{
+    "name": "XRBIT-CarFamily",
+    "version": "1.0.0",
+    "description": "XRBIT DRIVER BOARD FOR MICROBIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:991693552/pxt-neopixel-bluetoothallowed-master",
+        "bluetooth": "*",
+        "XRBIT_IR":"github:KylinBay/XRBIT_IR"
+    },
+    "files": [
+        "README.md",
+        "XRBIT.ts",
+        "_locales/zh/XRBIT-DS-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "license": "MIT"
+}

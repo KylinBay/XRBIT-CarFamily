@@ -1,0 +1,59 @@
+{
+  "XRbit_传感器.enVoice.Voice|block": "有声音",
+  "XRbit_传感器.enVoice.NoVoice|block": "无声音",
+  "XRbit_传感器.enIR.Get|block": "检测到",
+  "XRbit_传感器.enIR.NoGet|block": "未检测",
+  "XRbit_传感器.enLight.Open|block": "打开",
+  "XRbit_传感器.enLight.Close|block": "关闭",
+  "XRbit_传感器.enBuzzer.NoBeep|block": "不响",
+  "XRbit_传感器.enBuzzer.Beep|block": "响",
+  "XRbit_传感器.irPin.ir_Left|block": "左侧红外(P12)",
+  "XRbit_传感器.irPin.ir_Avoid|block": "中间红外(P13)",
+  "XRbit_传感器.irPin.ir_Right|block": "右侧红外(P14)",
+  "XRbit_传感器.Buzzer|block": "蜂鸣器|引脚 %pin|状态 %value",
+  "XRbit_传感器.IR_Sensor|block": "红外传感器|引脚 %pin|检测到|%value|障碍物",
+  "XRbit_传感器.Ultrasonic|block": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
+
+  "XRbit_传感器.ColorGrapAndSetRGB|block": "颜色传感器识别颜色并设置彩灯",
+
+ 
+  "XRbit_小车.enCarLight.openCarLight|block": "车灯打开",
+  "XRbit_小车.enCarLight.closeCarLight|block": "车灯关闭",
+  "XRbit_小车.SetCarLight|block":"设置|引脚 %pin| %CarLight",
+
+  "XRbit_小车.enWhichRgb.all|block":"全部",
+  "XRbit_小车.enWhichRgb.first|block":"1",
+  "XRbit_小车.enWhichRgb.second|block":"2",
+  "XRbit_小车.enWhichRgb.third|block":"3",
+  "XRbit_小车.enWhichRgb.forth|block":"4",
+  "XRbit_小车.SetRGB|block":"设置|彩灯 %whichRgb| 数据 %colorString",
+
+  "XRbit_小车.enMusic.twotigers|block":"两只老虎",
+  "XRbit_小车.enMusic.birthday|block":"生日歌",
+  "XRbit_小车.enMusic.littlestar|block":"小星星",
+  "XRbit_小车.PlayMusic|block":"播放|音乐 %music",
+
+  "XRbit_小车.PlayThePiano|block":"弹奏钢琴|键值 %key |音调(格式：000) %tone",
+
+  "XRbit_小车.RGB_Car_Program|block": "小车彩灯",
+  "XRbit_小车.enMotor.leftMotor|block": "左侧电机",
+  "XRbit_小车.enMotor.rightMotor|block": "右侧电机",
+  "XRbit_小车.enMotor.SweepingMotor|block": "扫地电机",
+
+  "XRbit_小车.enMecanum.northWest|block": "左前 ↖",
+  "XRbit_小车.enMecanum.northEast|block": "右前 ↗",
+  "XRbit_小车.enMecanum.east|block": "向东 →",
+  "XRbit_小车.enMecanum.west|block": "向西 ←",
+  "XRbit_小车.enMecanum.north|block": "直行 ↑",
+  "XRbit_小车.enMecanum.south|block": "后退 ↓",
+  "XRbit_小车.enMecanum.southWest|block": "左后 ↙",
+  "XRbit_小车.enMecanum.southEast|block": "右后 ↘",
+
+
+  "XRbit_小车.SetMotor|block": "设置电机|%Motor|速度为 %Speed",
+  "XRbit_小车.SetMecanumWheel|block": "设置全向轮|方向 %Mecanum|速度为 %Speed",
+  "XRbit_小车.SetMecanumStop|block": "停止全向轮运动",
+  "XRbit_小车.SetServoAngle|block": "设置舵机|编号 %Num|角度 %Angle",
+  "XRbit_小车.SaveServoAngle|block": "保存当前角度为默认值",
+  "XRbit_小车.ReSetServoAngle|block": "恢复所有角度为默认值"
+}
