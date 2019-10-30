@@ -40,22 +40,14 @@
   "XRbit_小车.enMotor.rightMotor|block": "右侧电机",
   "XRbit_小车.enMotor.SweepingMotor|block": "扫地电机",
 
-  "XRbit_小车.enMecanum.northWest|block": "左前 ↖",
-  "XRbit_小车.enMecanum.northEast|block": "右前 ↗",
-  "XRbit_小车.enMecanum.east|block": "向东 →",
-  "XRbit_小车.enMecanum.west|block": "向西 ←",
-  "XRbit_小车.enMecanum.north|block": "直行 ↑",
-  "XRbit_小车.enMecanum.south|block": "后退 ↓",
-  "XRbit_小车.enMecanum.southWest|block": "左后 ↙",
-  "XRbit_小车.enMecanum.southEast|block": "右后 ↘",
+
 
   "XRbit_小车.enServo.servo1|block": "舵机1",
   "XRbit_小车.enServo.servo2|block": "舵机2",
   "XRbit_小车.enServo.servo3|block": "舵机3",
 
   "XRbit_小车.SetMotor|block": "设置电机|%Motor|速度为 %Speed",
-  "XRbit_小车.SetMecanumWheel|block": "设置全向轮|方向 %Mecanum|速度为 %Speed",
-  "XRbit_小车.SetMecanumStop|block": "停止全向轮运动",
+
   "XRbit_小车.SetServoAngle|block": "设置舵机|编号 %servo|角度 %Angle",
   "XRbit_小车.SaveServoAngle|block": "保存当前角度为默认值",
   "XRbit_小车.ReSetServoAngle|block": "恢复所有角度为默认值"

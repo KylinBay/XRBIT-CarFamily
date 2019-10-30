@@ -219,24 +219,36 @@ namespace XRbit_小车 {
         closeCarLight = 0,    
     }
 
-    export enum enMecanum {
-        //% blockId="northWest" block="northWest"
-        northWest = 0x17,
-        //% blockId="northEast" block="northEast"
-        northEast = 0x18,
-        //% blockId="east" block="east"
-        east = 0x19,
-        //% blockId="west" block="west"
-        west = 0x20,
-        //% blockId="north" block="north"
-        north = 0x21,
-        //% blockId="south" block="south"
-        south = 0x22,
-        //% blockId="southWest" block="southWest"
-        southWest = 0x23,
-        //% blockId="southEast" block="southEast"
-        southEast = 0x24,
-    }
+    // "XRbit_小车.enMecanum.northWest|block": "左前 ↖",
+    // "XRbit_小车.enMecanum.northEast|block": "右前 ↗",
+    // "XRbit_小车.enMecanum.east|block": "向东 →",
+    // "XRbit_小车.enMecanum.west|block": "向西 ←",
+    // "XRbit_小车.enMecanum.north|block": "直行 ↑",
+    // "XRbit_小车.enMecanum.south|block": "后退 ↓",
+    // "XRbit_小车.enMecanum.southWest|block": "左后 ↙",
+    // "XRbit_小车.enMecanum.southEast|block": "右后 ↘",
+
+    // "XRbit_小车.SetMecanumWheel|block": "设置全向轮|方向 %Mecanum|速度为 %Speed",
+    // "XRbit_小车.SetMecanumStop|block": "停止全向轮运动",
+
+    // export enum enMecanum {
+    //     //% blockId="northWest" block="northWest"
+    //     northWest = 0x17,
+    //     //% blockId="northEast" block="northEast"
+    //     northEast = 0x18,
+    //     //% blockId="east" block="east"
+    //     east = 0x19,
+    //     //% blockId="west" block="west"
+    //     west = 0x20,
+    //     //% blockId="north" block="north"
+    //     north = 0x21,
+    //     //% blockId="south" block="south"
+    //     south = 0x22,
+    //     //% blockId="southWest" block="southWest"
+    //     southWest = 0x23,
+    //     //% blockId="southEast" block="southEast"
+    //     southEast = 0x24,
+    // }
 
     export enum enWhichRgb {
         //% blockId="all" block="all"
@@ -598,35 +610,35 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
 
-    //% blockId=XRbit_SetMecanumWheel block="SetMecanumWheel|direction %Mecanum|Speed %Speed"
-    //% weight=94
-    //% blockGap=10
-    //% color="#0fbc11"
-    //% Speed.min=-100 Speed.max=100
-    export function SetMecanumWheel(Mecanum: enMecanum, Speed: number): void {
-        let buf1 = pins.createBuffer(2);
-        let buf2 = pins.createBuffer(2);
-        buf1[0] = 0xFF;
-        buf1[1] = Mecanum;
-        buf2[0] = Speed+100;
-        buf2[1] = 0xFF;
-        pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
-        pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
-    }
-    //% blockId=XRBIT_SetMecanumStop block="SetMecanumStop"
-    //% weight=94
-    //% blockGap=10
-    //% color="#0fbc11"
-    export function SetMecanumStop(): void {
-        let buf1 = pins.createBuffer(2);
-        let buf2 = pins.createBuffer(2);
-        buf1[0] = 0xFF;
-        buf1[1] = 0x25;
-        buf2[0] = 0x00;
-        buf2[1] = 0xFF;
-        pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
-        pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
-    }
+    // //% blockId=XRbit_SetMecanumWheel block="SetMecanumWheel|direction %Mecanum|Speed %Speed"
+    // //% weight=94
+    // //% blockGap=10
+    // //% color="#0fbc11"
+    // //% Speed.min=-100 Speed.max=100
+    // export function SetMecanumWheel(Mecanum: enMecanum, Speed: number): void {
+    //     let buf1 = pins.createBuffer(2);
+    //     let buf2 = pins.createBuffer(2);
+    //     buf1[0] = 0xFF;
+    //     buf1[1] = Mecanum;
+    //     buf2[0] = Speed+100;
+    //     buf2[1] = 0xFF;
+    //     pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
+    //     pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
+    // }
+    // //% blockId=XRBIT_SetMecanumStop block="SetMecanumStop"
+    // //% weight=94
+    // //% blockGap=10
+    // //% color="#0fbc11"
+    // export function SetMecanumStop(): void {
+    //     let buf1 = pins.createBuffer(2);
+    //     let buf2 = pins.createBuffer(2);
+    //     buf1[0] = 0xFF;
+    //     buf1[1] = 0x25;
+    //     buf2[0] = 0x00;
+    //     buf2[1] = 0xFF;
+    //     pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
+    //     pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
+    // }
 
     export enum enServo{
         //% blockId="servo1" block="servo1"
@@ -634,7 +646,7 @@ namespace XRbit_小车 {
         //% blockId="servo2" block="servo2"
         servo2 = 0x1A,
         //% blockId="servo3" block="servo3"
-        servo3 = 0x21,
+        servo3 = 0x1B,
     }
 
     //% blockId=XRBIT_SetServoAngle block="SetServoAngle| %servo|Angle %Angle"
