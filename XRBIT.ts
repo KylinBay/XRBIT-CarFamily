@@ -634,7 +634,7 @@ namespace XRbit_小车 {
         //% blockId="servo2" block="servo2"
         servo2 = 0x1A,
         //% blockId="servo3" block="servo3"
-        servo3 = 0x1B,
+        servo3 = 0x21,
     }
 
     //% blockId=XRBIT_SetServoAngle block="SetServoAngle| %servo|Angle %Angle"
