@@ -500,64 +500,64 @@ namespace XRbit_小车 {
 
     function allCtrl(color: string) {
         if (color == "000") {
-            RGB_Car_Program().clear()
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().clear()
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "001") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Blue))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Blue))
         }
         if (color == "010") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Green))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Green))
         }
         if (color == "011") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Orange))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Orange))
         }
         if (color == "100") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Red))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Red))
         }
         if (color == "101") {
             XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Violet))
         }
         if (color == "110") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Yellow))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Yellow))
         }
         if (color == "111") {
-            RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.White))
+            XRbit_小车.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.White))
         }
     }
 
     function oneCtrl(whichRGB: number, color: string) {
         if (color == "000") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.rgb(0, 0, 0))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.rgb(0, 0, 0))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "001") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Blue))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Blue))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "010") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Green))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Green))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "011") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Orange))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Orange))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "100") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Red))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Red))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "101") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Violet))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Violet))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "110") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Yellow))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.Yellow))
+            XRbit_小车.RGB_Car_Program().show()
         }
         if (color == "111") {
-            RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.White))
-            RGB_Car_Program().show()
+            XRbit_小车.RGB_Car_Program().setPixelColor(whichRGB, neopixel.colors(NeoPixelColors.White))
+            XRbit_小车.RGB_Car_Program().show()
         }
     }
 
