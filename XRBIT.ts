@@ -635,7 +635,7 @@ namespace XRbit_小车 {
     //% Num.min=1 Num.max=3 Angle.min=0 Angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function SetServoAngle(Num: number, Angle: number): void {
-        var servo
+        var servo = 0
         if (Num == 1)
             servo = 0x19
         if (Num == 2)
