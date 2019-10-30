@@ -11,7 +11,7 @@
     "files": [
         "README.md",
         "XRBIT.ts",
-        "_locales/zh/XRBIT-DS-strings.json"
+        "_locales/zh/XRBIT-CarFamily-strings.json"
     ],
     "testFiles": [
         "test.ts"
