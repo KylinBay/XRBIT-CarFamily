@@ -208,7 +208,7 @@ namespace XRbit_小车 {
         //% blockId="rightMotor" block="rightMotor"
         rightMotor = 0x15,
         //% blockId="SweepingMotor" block="SweepingMotor"
-        SweepingMotor = 0x16,      
+        SweepingMotor = 0x18,      
 
     }
 
@@ -632,13 +632,20 @@ namespace XRbit_小车 {
     //% weight=94
     //% blockGap=10
     //% color="#0fbc11"
-    //% Num.min=1 Num.max=8 Angle.min=0 Angle.max=180
+    //% Num.min=1 Num.max=3 Angle.min=0 Angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function SetServoAngle(Num: number, Angle: number): void {
+        var servo
+        if (Num == 1)
+            servo = 0x19
+        if (Num == 2)
+            servo = 0x1A
+        if (Num == 3)
+            servo = 0x1B
         let buf1 = pins.createBuffer(2);
         let buf2 = pins.createBuffer(2);
         buf1[0] = 0xFF;
-        buf1[1] = Num;
+        buf1[1] = servo;
         buf2[0] = Angle;
         buf2[1] = 0xFF;
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
