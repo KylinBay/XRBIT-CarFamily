@@ -36,8 +36,11 @@
   "XRbit_小车.PlayThePiano|block":"弹奏钢琴|键值 %key |音调(格式：000) %tone",
 
   "XRbit_小车.RGB_Car_Program|block": "小车彩灯",
-  "XRbit_小车.enMotor.leftMotor|block": "左侧电机",
-  "XRbit_小车.enMotor.rightMotor|block": "右侧电机",
+  "XRbit_小车.enMotor.leftFront|block": "左前电机",
+  "XRbit_小车.enMotor.leftRear|block": "左后电机",
+  "XRbit_小车.enMotor.rightFront|block": "右前电机",
+  "XRbit_小车.enMotor.rightRear|block": "右后电机",
+
   "XRbit_小车.enMotor.SweepingMotor|block": "扫地电机",
 
 
