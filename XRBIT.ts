@@ -204,16 +204,15 @@ namespace XRbit_小车 {
     let xrStrip: neopixel.Strip;
     export enum enMotor {
         //% blockId="leftFront" block="leftFront"
-        leftFront = 0x14,
+        leftFront = 0x1C,
         //% blockId="leftRear" block="leftRear"
-        leftRear = 0x15,
+        leftRear = 0x1D,
         //% blockId="rightFront" block="rightFront"
         rightFront = 0x16,
         //% blockId="rightRear" block="rightRear"
         rightRear = 0x17,
         //% blockId="SweepingMotor" block="SweepingMotor"
         SweepingMotor = 0x18,      
-
     }
 
     export enum enCarLight {
@@ -222,8 +221,6 @@ namespace XRbit_小车 {
         //% blockId="closeCarLight" block="closeCarLight"
         closeCarLight = 0,    
     }
-
-    
 
     export enum enWhichRgb {
         //% blockId="all" block="all"
