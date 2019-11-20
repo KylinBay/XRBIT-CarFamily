@@ -204,9 +204,9 @@ namespace XRbit_小车 {
     let xrStrip: neopixel.Strip;
     export enum enMotor {
         //% blockId="leftFront" block="leftFront"
-        leftFront = 0x1C,
+        leftFront = 0x1D,
         //% blockId="leftRear" block="leftRear"
-        leftRear = 0x1D,
+        leftRear = 0x1E,
         //% blockId="rightFront" block="rightFront"
         rightFront = 0x16,
         //% blockId="rightRear" block="rightRear"
